@@ -1,0 +1,13 @@
+<h2>Edit User</h2>
+
+<form method="POST">
+    Name: <input name="name" value="{{u[1]}}"><br><br>
+    Email: <input name="email" value="{{u[2]}}"><br><br>
+    Role:
+    <select name="role">
+        <option {% if u[3]=='admin' %}selected{% endif %}>admin</option>
+        <option {% if u[3]=='staff' %}selected{% endif %}>staff</option>
+        <option {% if u[3]=='student' %}selected{% endif %}>student</option>
+    </select><br><br>
+    <button type="submit">Update</button>
+</form>
