@@ -18,6 +18,6 @@ This is a Flask based CRUD web application for managing users.
 4. Run
    python app.py
 5. Open browser:
-   http://127.0.0.1:5000
+   http://127.0.0.1:10000/users
 
 
