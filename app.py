@@ -1,15 +1,17 @@
 from flask import Flask, render_template, request, redirect
 import mysql.connector
+import os
 
 app = Flask(__name__, static_folder="static")
 
 
 db = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="MODINAhere#1224",
-    database="crud_app_db"
+    host=os.environ.get("DB_HOST"),
+    user=os.environ.get("DB_USER"),
+    password=os.environ.get("DB_PASSWORD"),
+    database=os.environ.get("DB_NAME")
 )
+
 
 @app.route("/")
 def home():
