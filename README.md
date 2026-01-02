@@ -1,6 +1,6 @@
 # CRUD User Management System
 
-This is a Flask based CRUD web application for managing users.
+This is a Flask based CRUD web application using mySQL for managing users.
 
 ## Features
 - Add User
