@@ -1,18 +1,23 @@
 # CRUD User Management System
 
-This is a simple CRUD (Create, Read, Update, Delete) web application built using Flask and MySQL.
+This is a Flask based CRUD web application for managing users.
 
 ## Features
-- Add new users
-- View user list
-- Edit user details
-- Delete users
-- Prevent duplicate users by unique email
+- Add User
+- View User List
+- Edit User
+- Delete User
+- Email duplication prevention using UNIQUE constraint
 
-## Technologies Used
-- Python (Flask)
-- MySQL
-- HTML
-- CSS
+## How to Run
+
+1. Install Python
+2. Install requirements
+   pip install flask mysql-connector-python
+3. Import crud_app_db.sql into MySQL
+4. Run
+   python app.py
+5. Open browser:
+   http://127.0.0.1:5000
 
 
